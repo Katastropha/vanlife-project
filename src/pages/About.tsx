@@ -3,7 +3,7 @@ import { ReactElement } from "react";
 const About = (): ReactElement => {
   console.log("about");
   return (
-    <>
+    <div className="content">
       <div className="about__img"></div>
       <div className="about-component">
         <div className="about__information">
@@ -38,7 +38,7 @@ const About = (): ReactElement => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

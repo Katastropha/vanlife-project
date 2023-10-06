@@ -3,7 +3,7 @@ import { ReactElement } from "react";
 const Home = (): ReactElement => {
   console.log("home");
   return (
-    <div className="home-component">
+    <div className="content home-component">
       <h1 className="home_header">
         You got the travel plans, we got the travel vans.
       </h1>

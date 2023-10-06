@@ -22,9 +22,6 @@ const Product = ({
 
   console.log("Van", key);
 
-  let color =
-    type === "simple" ? "#E17654" : type === "rugged" ? "#115E59" : "#161616";
-
   return (
     <div className="van-product">
       <div className="product-van__img" style={vanImage}></div>

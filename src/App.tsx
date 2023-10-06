@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Home, About, Vans, Host } from "./pages/index.js";
 import { MainNavbar } from "./components/index.js";
+import { TestContainer } from "./Test";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/vans" element={<Vans />} />
           <Route path="/host" element={<Host />} />
+          <Route path="/test" element={<TestContainer />} />
         </Routes>
 
         <footer className="main-footer">

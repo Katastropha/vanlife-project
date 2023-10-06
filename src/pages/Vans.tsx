@@ -10,6 +10,8 @@ const Vans = (): ReactElement => {
     console.log(str);
   };
 
+  getVans(`we getting vans TEST`);
+
   console.log("vans are here!");
 
   const vans = vanData.map((el): ReactElement => {
@@ -25,7 +27,7 @@ const Vans = (): ReactElement => {
   });
 
   return (
-    <div className="vans-component">
+    <div className="content vans-component">
       <div className="vans-component__filter">
         <button
           className="van-filter-btn"
