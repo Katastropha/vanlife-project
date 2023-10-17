@@ -1,11 +1,15 @@
-// import { useState } from "react";
-import "./App.css";
+import './App.css'
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import { Home, About, Vans, Host } from "./pages/index.js";
-import { MainNavbar } from "./components/index.js";
-import { TestContainer } from "./Test";
+import { Home, About, Vans, Host } from './pages/index'
+import { MainNavbar } from './components/MainNavbar'
+import { TestContainer } from './Test'
+import { VanDetailed } from './components/VanDetailed'
+import { Dashboard } from './pages/Host/Dashboard'
+import { Income } from './pages/Host/Income'
+import { HostVans } from './pages/Host/HostVans'
+import { Reviews } from './pages/Host/Reviews'
 
 function App() {
   return (
@@ -17,9 +21,19 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
+
           <Route path="/about" element={<About />} />
+
           <Route path="/vans" element={<Vans />} />
-          <Route path="/host" element={<Host />} />
+          <Route path="/vans/:id" element={<VanDetailed />} />
+
+          <Route path="/host" element={<Host />}>
+            <Route path="/host" element={<Dashboard />} />
+            <Route path="/host/income" element={<Income />} />
+            <Route path="/host/hostVans" element={<HostVans />} />
+            <Route path="/host/reviews" element={<Reviews />} />
+          </Route>
+
           <Route path="/test" element={<TestContainer />} />
         </Routes>
 
@@ -28,7 +42,7 @@ function App() {
         </footer>
       </div>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App

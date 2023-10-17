@@ -1,30 +1,35 @@
-import { ReactElement, useState } from "react";
-import { Product } from "../components/index.js";
+import { ReactElement, useState, useEffect } from 'react'
+import { Product } from '../components/Product'
 
-import initialVans from "../data.ts";
+import { IVans, initialVans } from '../data'
 
 const Vans = (): ReactElement => {
-  const [vanData, setVans] = useState(initialVans);
-
-  const getVans = ({ str }: { str: string }): void => {
-    console.log(str);
-  };
-
-  getVans(`we getting vans TEST`);
-
-  console.log("vans are here!");
-
-  const vans = vanData.map((el): ReactElement => {
+  const [vansForRent, setVansForRent] = useState(initialVans)
+  const vans = vansForRent.map((el): ReactElement => {
+    console.log(el.id)
     return (
       <Product
         key={el.id}
+        id={el.id}
         name={el.name}
         price={el.price}
         type={el.type}
-        image={el.imageUrl}
+        imageUrl={el.imageUrl}
       />
-    );
-  });
+    )
+  })
+
+  useEffect(() => {
+    console.log(vansForRent)
+  }, [vansForRent])
+
+  const getFilteredVans = (str: string): void => {
+    setVansForRent(() =>
+      initialVans.filter((el) => {
+        return el.type === str
+      })
+    )
+  }
 
   return (
     <div className="content vans-component">
@@ -32,8 +37,8 @@ const Vans = (): ReactElement => {
         <button
           className="van-filter-btn"
           onClick={() => {
-            // getVans("simple");
-            console.log("simple");
+            console.log('simple')
+            getFilteredVans('simple')
           }}
         >
           simple
@@ -42,8 +47,8 @@ const Vans = (): ReactElement => {
         <button
           className="van-filter-btn"
           onClick={() => {
-            // getVans("rugged");
-            console.log("rugged");
+            console.log('rugged')
+            getFilteredVans('rugged')
           }}
         >
           rugged
@@ -52,8 +57,8 @@ const Vans = (): ReactElement => {
         <button
           className="van-filter-btn"
           onClick={() => {
-            // getVans("luxury");
-            console.log("luxury");
+            console.log('luxury')
+            getFilteredVans('luxury')
           }}
         >
           luxury
@@ -61,7 +66,7 @@ const Vans = (): ReactElement => {
       </div>
       <div className="vans-component__items">{vans}</div>
     </div>
-  );
-};
+  )
+}
 
-export default Vans;
+export default Vans
