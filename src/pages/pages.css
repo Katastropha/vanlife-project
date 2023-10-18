@@ -142,11 +142,21 @@
   width: 104px;
   height: 37px;
   padding: 6px 26px 7px 26px;
-  align-items: center;
   flex-shrink: 0;
   border: none;
   margin: 0 15px 0 0;
   text-transform: capitalize;
+}
+
+.van-filter-btn-clear {
+  border: none;
+  background: none;
+  font-family: Inter;
+  color: #4d4d4d;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration-line: underline;
 }
 
 .vans-component-items {

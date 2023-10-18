@@ -5,6 +5,8 @@ import { IVans, initialVans } from '../data'
 
 const Vans = (): ReactElement => {
   const [vansForRent, setVansForRent] = useState(initialVans)
+  const [isFiltered, setIsFiltered] = useState(false)
+
   const vans = vansForRent.map((el): ReactElement => {
     console.log(el.id)
     return (
@@ -38,6 +40,7 @@ const Vans = (): ReactElement => {
           className="van-filter-btn"
           onClick={() => {
             console.log('simple')
+            setIsFiltered(true)
             getFilteredVans('simple')
           }}
         >
@@ -48,6 +51,7 @@ const Vans = (): ReactElement => {
           className="van-filter-btn"
           onClick={() => {
             console.log('rugged')
+            setIsFiltered(true)
             getFilteredVans('rugged')
           }}
         >
@@ -58,12 +62,25 @@ const Vans = (): ReactElement => {
           className="van-filter-btn"
           onClick={() => {
             console.log('luxury')
+            setIsFiltered(true)
             getFilteredVans('luxury')
           }}
         >
           luxury
         </button>
+
+        {isFiltered && (
+          <button
+            onClick={() => {
+              setVansForRent(initialVans), setIsFiltered(false)
+            }}
+            className="van-filter-btn-clear"
+          >
+            Clear filters
+          </button>
+        )}
       </div>
+
       <div className="vans-component__items">{vans}</div>
     </div>
   )
