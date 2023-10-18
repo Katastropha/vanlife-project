@@ -6,7 +6,13 @@ export const MainNavbar = (): ReactElement => {
   return (
     <nav className="nav">
       <div>
-        <NavLink className="nav_logo-link" to="/">
+        {' '}
+        <NavLink
+          className={() => {
+            return 'nav_logo-link'
+          }}
+          to="/"
+        >
           #VanLife
         </NavLink>
       </div>
