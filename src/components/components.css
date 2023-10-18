@@ -13,7 +13,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px 0 40px;
+  padding: 0 20px 0 37px;
 }
 
 .nav_logo-link {
@@ -209,7 +209,7 @@
 .navigation-small {
   width: 100%;
   height: 112px;
-  padding: 0 0 0 40px;
+  padding: 42px 0 42px 37px;
 }
 .navigation-small__option {
   color: #4d4d4d;
