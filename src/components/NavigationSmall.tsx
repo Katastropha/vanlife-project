@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 export const NavigationSmall = (): ReactElement => {
   return (
     <div className="navigation-small">
-      <NavLink to="/host" className="navigation-small__option">
+      <NavLink to="/host" end className="navigation-small__option">
         Dashboard
       </NavLink>
       <NavLink to="/host/income" className="navigation-small__option">
