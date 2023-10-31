@@ -1,9 +1,21 @@
 import { ReactElement } from 'react'
+import { Host } from '../../dataHost'
+import { HostOrderDetailSmall } from './smallHostComponents/HostOrderDetailSmall'
+import { getListOfOrders } from './smallHostComponents/getListOfOrders'
 
-export const HostVans = (): ReactElement => {
+interface Props {
+  host: Host
+}
+
+export const HostVans = ({ host }: Props): ReactElement => {
+  const transactions = getListOfOrders(host.ordersIDs)
+
   return (
-    <div>
-      <h2>I am a vans component</h2>
+    <div className="host-component host-component-vans">
+      <h1>Your listed vans</h1>
+      <div className="host-component-vans-details">
+        transactions details from data Orders
+      </div>
     </div>
   )
 }

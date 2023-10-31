@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 
 type Props = {
-  orderPrice: number
+  orderPrice: number | string
   orderDate: string
 }
 export const OrderDetailSmall = ({

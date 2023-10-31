@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import { IVans, initialVans } from '../data'
+import { IVans, initialVans } from '../dataVans'
 import { useParams } from 'react-router-dom'
 
 export const VanDetailed = (): ReactElement | null => {

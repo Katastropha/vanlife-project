@@ -4,13 +4,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { Home, About, Vans, Host } from './pages/index'
 import { MainNavbar } from './components/MainNavbar'
-import { TestContainer } from './Test'
 import { VanDetailed } from './components/VanDetailed'
 import { Dashboard } from './pages/Host/Dashboard'
 import { Income } from './pages/Host/Income'
 import { HostVans } from './pages/Host/HostVans'
 import { Reviews } from './pages/Host/Reviews'
-import { TestFetch } from './pages/TestComponents/TestFetch'
 
 import { dataHost } from './dataHost'
 
@@ -40,7 +38,10 @@ function App() {
               element={<Income host={dataHost[0]} />}
             />
 
-            <Route path="/host/hostVans" element={<HostVans />} />
+            <Route
+              path="/host/hostVans"
+              element={<HostVans host={dataHost[0]} />}
+            />
 
             <Route path="/host/reviews" element={<Reviews />} />
           </Route>

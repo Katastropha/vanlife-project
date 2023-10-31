@@ -1,7 +1,7 @@
 import { ReactElement, useState, useEffect } from 'react'
 import { Product } from '../components/Product'
 
-import { IVans, initialVans } from '../data'
+import { IVans, initialVans } from '../dataVans'
 
 const Vans = (): ReactElement => {
   const [vansForRent, setVansForRent] = useState(initialVans)
