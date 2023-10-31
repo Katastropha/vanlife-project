@@ -167,7 +167,6 @@
 /* ================================================================= */
 .host-component {
   width: 100%;
-  height: 100%;
   color: #161616;
   font-family: Inter;
   font-style: normal;
@@ -202,13 +201,13 @@
   font-weight: 700;
   line-height: 22px;
 }
-.host-component__welcome-text {
+.gray-text {
   color: #4d4d4d;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
 }
-.host-component__welcome-text-underline {
+.gray-text-underline {
   text-decoration: underline;
   font-weight: 700;
 }
@@ -232,7 +231,7 @@
   line-height: 22px;
 }
 
-.review-score-block-header {
+.block-header {
   margin: 0 12px 0 0;
   font-size: 24px;
   font-weight: 700;
@@ -263,3 +262,62 @@
 }
 .host-component__listed-vans_vans {
 }
+/* INCOME */
+/* === */
+
+.host-component-income {
+  padding: 0 27px 0 27px;
+}
+
+.img {
+  width: 100%;
+  min-height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.host-component__small-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0 15px;
+}
+
+.block-header {
+  margin: 0;
+}
+
+.host-component__transactions {
+  width: 100%;
+  margin: 10px 0 60px 0;
+}
+
+.host-component__transactions-order {
+  background: white;
+  height: 102px;
+  margin: 0 0 25px;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 5px;
+}
+
+.price {
+  color: #161616;
+  font-size: 36px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.date {
+  color: #4d4d4d;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+/* ==== */

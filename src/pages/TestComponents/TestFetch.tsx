@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { customFetch } from '../customFetch'
+import { customFetch } from '../../customFetch'
 
 const apiUrl = 'https://api.artic.edu/api/v1/artworks/search?q=cats'
 
