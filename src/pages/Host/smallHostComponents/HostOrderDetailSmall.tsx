@@ -12,17 +12,17 @@ export const HostOrderDetailSmall = ({
   vanPrice,
 }: Props): ReactElement => {
   return (
-    <div>
+    <div className="host-component-van">
       <div
-        className="host-component-vans__order-img"
+        className="host-component-van__order-img"
         style={{ backgroundImage: `url(${vanImage})` }}
       >
         {' '}
       </div>
 
-      <div className="host-component-vans__order-info">
-        <h3 className="">{vanName}</h3>
-        <p className="">${vanPrice}/day</p>
+      <div className="host-component-van__order-info">
+        <h3 className="order-name">{vanName}</h3>
+        <p className="order-price">${vanPrice}/day</p>
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 import { ReactElement, useEffect } from 'react'
 import { Host } from '../../dataHost'
 import { LastDays } from './smallHostComponents/LastDays'
-import { OrderDetailSmall } from './smallHostComponents/OrderDetailSmall'
+import { HostOrderSummarySmall } from './smallHostComponents/HostOrderSummarySmall'
 
 import { getListOfOrders } from './smallHostComponents/getListOfOrders'
 
@@ -11,9 +11,10 @@ interface Props {
 
 export const Income = ({ host }: Props): ReactElement => {
   const transactions = getListOfOrders(host.ordersIDs)
-
   const orders = transactions.map(({ orderPrice, orderDate }) => {
-    return <OrderDetailSmall orderPrice={orderPrice} orderDate={orderDate} />
+    return (
+      <HostOrderSummarySmall orderPrice={orderPrice} orderDate={orderDate} />
+    )
   })
 
   return (

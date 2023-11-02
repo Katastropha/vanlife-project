@@ -4,7 +4,7 @@ type Props = {
   orderPrice: number | string
   orderDate: string
 }
-export const OrderDetailSmall = ({
+export const HostOrderSummarySmall = ({
   orderPrice,
   orderDate,
 }: Props): ReactElement => {
