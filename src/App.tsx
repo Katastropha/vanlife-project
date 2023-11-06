@@ -1,4 +1,5 @@
 import './App.css'
+import './pages/Host/host.css'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -43,7 +44,10 @@ function App() {
               element={<HostVans host={dataHost[0]} />}
             />
 
-            <Route path="/host/reviews" element={<Reviews />} />
+            <Route
+              path="/host/reviews"
+              element={<Reviews host={dataHost[0]} />}
+            />
           </Route>
         </Routes>
 

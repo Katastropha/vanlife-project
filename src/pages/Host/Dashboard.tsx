@@ -59,7 +59,9 @@ export const Dashboard = ({
         <div>
           <h3 className="block-header">
             Review score
-            <Star />
+            <span className="star-space">
+              <Star />
+            </span>
             {reviewScore}
             <span className="review-score-block-grey">/5</span>
           </h3>
