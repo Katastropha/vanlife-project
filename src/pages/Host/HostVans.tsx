@@ -1,28 +1,13 @@
 import { ReactElement } from 'react'
 import { Host } from '../../dataHost'
-import { HostOrderDetailSmall } from './smallHostComponents/HostOrderDetailSmall'
-import { getListOfOrders } from './smallHostComponents/getListOfOrders'
-import { initialVans } from '../../dataVans'
+import { getTransactionsSmall } from './smallHostComponents/getTransactionsSmall'
 
 interface Props {
   host: Host
 }
 
 export const HostVans = ({ host }: Props): ReactElement => {
-  const transactions = getListOfOrders(host.ordersIDs)
-    .map(({ vanId }) => vanId)
-    .map((id) => {
-      return initialVans.find((obj) => obj.id === id)
-    })
-    .map(({ imageUrl, name, price }) => {
-      return (
-        <HostOrderDetailSmall
-          vanImage={imageUrl}
-          vanName={name}
-          vanPrice={price}
-        />
-      )
-    })
+  const transactions = getTransactionsSmall(host.ordersIDs)
 
   return (
     <div className="host-component host-component-vans">

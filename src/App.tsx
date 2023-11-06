@@ -30,10 +30,7 @@ function App() {
           <Route path="/vans/:id" element={<VanDetailed />} />
 
           <Route path="/host" element={<Host />}>
-            <Route
-              path="/host"
-              element={<Dashboard name="host123" income={2000} />}
-            />
+            <Route path="/host" element={<Dashboard host={dataHost[0]} />} />
             <Route
               path="/host/income"
               element={<Income host={dataHost[0]} />}

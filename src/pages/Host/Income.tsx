@@ -10,12 +10,13 @@ interface Props {
 }
 
 export const Income = ({ host }: Props): ReactElement => {
-  const transactions = getListOfOrders(host.ordersIDs)
-  const orders = transactions.map(({ orderPrice, orderDate }) => {
-    return (
-      <HostOrderSummarySmall orderPrice={orderPrice} orderDate={orderDate} />
-    )
-  })
+  const transactions = getListOfOrders(host.ordersIDs).map(
+    ({ orderPrice, orderDate }) => {
+      return (
+        <HostOrderSummarySmall orderPrice={orderPrice} orderDate={orderDate} />
+      )
+    }
+  )
 
   return (
     <div className="host-component host-component-income">
@@ -35,20 +36,7 @@ export const Income = ({ host }: Props): ReactElement => {
         </p>
         <LastDays />
       </div>
-      {orders}
+      {transactions}
     </div>
   )
-}
-
-{
-  /* <div className="host-component__transactions">
-{orders.map((obj) => {
-return (
-<OrderDetailSmall
-orderPrice={obj.orderPrice}
-orderDate={obj.orderDate}
-/>
-)
-})}
-</div> */
 }
