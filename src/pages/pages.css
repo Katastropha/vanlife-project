@@ -38,9 +38,11 @@
 }
 
 .home_btn {
+  margin: 100px 0 0 0;
+  padding: 8px;
+  text-align: center;
   width: 100%;
   height: 50px;
-  margin: 100px 0 0 0;
   border-radius: 5px;
 
   color: white;
@@ -50,6 +52,8 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 32px;
+
+  text-decoration: none;
 }
 
 /* ABOUT */
@@ -103,6 +107,7 @@
 }
 
 .card-header {
+  margin: 10px 0 40px;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -110,7 +115,9 @@
 
 .card-btn {
   margin: 20px 0;
-  height: 50px;
+  padding: 15px;
+
+  height: 200px;
   width: 174px;
   border-radius: 10px;
 
@@ -122,6 +129,8 @@
   background-color: #161616;
 
   border: none;
+
+  text-decoration: none;
 }
 
 /* VANS */

@@ -1,7 +1,8 @@
-import { ReactElement } from "react";
+import { ReactElement } from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = (): ReactElement => {
-  console.log("home");
+  console.log('home')
   return (
     <div className="content home-component">
       <h1 className="home_header">
@@ -13,16 +14,11 @@ const Home = (): ReactElement => {
         perfect van to make your perfect road trip.
       </p>
 
-      <button
-        className="home_btn"
-        onClick={() => {
-          console.log("Find your van > HOME ");
-        }}
-      >
+      <Link className="home_btn" to={'/vans'}>
         Find your van
-      </button>
+      </Link>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

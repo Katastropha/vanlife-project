@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Home, About, Vans, Host } from '../index'
-import { MainNavbar } from '../../components/MainNavbar'
-import { VanDetailed } from '../../components/VanDetailed'
+import { MainNavbar } from '../../smallComponents/MainNavbar'
+import { VanDetailed } from '../Vans/VanDetailed'
 
 export function App() {
   return (

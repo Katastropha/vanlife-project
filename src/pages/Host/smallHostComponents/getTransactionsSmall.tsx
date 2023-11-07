@@ -1,4 +1,4 @@
-import { initialVans } from '../../../dataVans'
+import { initialVans } from '../../../data/dataVans'
 import { HostOrderDetailSmall } from './HostOrderDetailSmall'
 import { getListOfOrders } from './getListOfOrders'
 

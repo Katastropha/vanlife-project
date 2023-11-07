@@ -1,7 +1,7 @@
-import Home from './Home'
-import About from './About'
+import Home from './Home/Home'
+import About from './About/About'
 import { Host } from './Host/Host'
-import Vans from './Vans'
+import Vans from './Vans/Vans'
 
 import './pages.css'
 

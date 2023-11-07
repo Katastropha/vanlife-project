@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import { Host } from '../../dataHost'
+import { Host } from '../../data/dataHost'
 import { LastDays } from './smallHostComponents/LastDays'
 import { Review } from './smallHostComponents/Review'
 

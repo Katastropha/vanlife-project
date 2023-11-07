@@ -4,14 +4,14 @@ import './pages/Host/host.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { Home, About, Vans, Host } from './pages/index'
-import { MainNavbar } from './components/MainNavbar'
-import { VanDetailed } from './components/VanDetailed'
+import { MainNavbar } from './smallComponents/MainNavbar'
+import { VanDetailed } from './pages/Vans/VanDetailed'
 import { Dashboard } from './pages/Host/Dashboard'
 import { Income } from './pages/Host/Income'
 import { HostVans } from './pages/Host/HostVans'
 import { Reviews } from './pages/Host/Reviews'
 
-import { dataHost } from './dataHost'
+import { dataHost } from './data/dataHost'
 
 function App() {
   return (
@@ -24,7 +24,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
 
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />}>
+            {/* <Route path="/vans" element={<Vans />} /> */}
+          </Route>
 
           <Route path="/vans" element={<Vans />} />
           <Route path="/vans/:id" element={<VanDetailed />} />

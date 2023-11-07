@@ -1,4 +1,4 @@
-import { dataOrders } from '../../../dataOrders'
+import { dataOrders } from '../../../data/dataOrders'
 
 export const getListOfOrders = (arr: string[]) => {
   const result = arr.map((id) => {

@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 import { Star } from './smallHostComponents/Star'
 import { LastDays } from './smallHostComponents/LastDays'
-import { Host } from '../../dataHost'
+import { Host } from '../../data/dataHost'
 import { getTransactionsSmall } from './smallHostComponents/getTransactionsSmall'
 
 interface Props {

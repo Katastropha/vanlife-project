@@ -1,10 +1,12 @@
-import { ReactElement } from "react";
+import { ReactElement } from 'react'
+import { Link } from 'react-router-dom'
 
 const About = (): ReactElement => {
-  console.log("about");
+  console.log('about')
   return (
     <div className="content">
       <div className="about__img"></div>
+
       <div className="about-component">
         <div className="about__information">
           <h1 className="about__information-header">
@@ -27,19 +29,14 @@ const About = (): ReactElement => {
               Your destination is waiting. Your van is ready.
             </h2>
 
-            <button
-              className="card-btn"
-              onClick={() => {
-                console.log("Explore our vans > ABOUT ");
-              }}
-            >
+            <Link className="card-btn" to={'/vans'}>
               Explore our vans
-            </button>
+            </Link>
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About
