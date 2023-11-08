@@ -1,9 +1,9 @@
 import { ReactElement, useEffect } from 'react'
-import { Host } from '../../data/dataHost'
-import { LastDays } from './smallHostComponents/LastDays'
-import { HostOrderSummarySmall } from './smallHostComponents/HostOrderSummarySmall'
+import { Host } from '../../../data/dataHost'
+import { LastDays } from '../smallHostComponents/LastDays'
+import { HostOrderSummarySmall } from '../smallHostComponents/HostOrderSummarySmall'
 
-import { getListOfOrders } from './smallHostComponents/getListOfOrders'
+import { getListOfOrders } from '../smallHostComponents/getListOfOrders'
 
 interface Props {
   host: Host

@@ -1,5 +1,5 @@
 import { IVans } from '../../data/dataVans'
-import { Product } from '../../smallComponents/Product'
+import { Product } from './Product'
 
 export const getVansForRent = (arr: IVans[]) =>
   arr.map((el) => (

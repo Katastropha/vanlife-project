@@ -1,6 +1,6 @@
 import { ReactElement } from 'react'
-import { Host } from '../../data/dataHost'
-import { getTransactionsSmall } from './smallHostComponents/getTransactionsSmall'
+import { Host } from '../../../data/dataHost'
+import { getTransactionsSmall } from '../smallHostComponents/getTransactionsSmall'
 
 interface Props {
   host: Host

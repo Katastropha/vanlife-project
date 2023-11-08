@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
-import { Host } from '../../data/dataHost'
-import { LastDays } from './smallHostComponents/LastDays'
-import { Review } from './smallHostComponents/Review'
+import { Host } from '../../../data/dataHost'
+import { LastDays } from '../smallHostComponents/LastDays'
+import { Review } from '../smallHostComponents/Review'
 
 interface Props {
   host: Host

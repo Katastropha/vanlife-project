@@ -16,8 +16,6 @@ export const Product = ({
   type,
   imageUrl,
 }: ProductProps): ReactElement => {
-  //   const vanType = type.charAt(0).toUpperCase() + type.slice(1);
-
   return (
     <Link to={`/vans/${id}`}>
       <div className="van-product">
@@ -25,13 +23,16 @@ export const Product = ({
           className="product-van__img"
           style={{ backgroundImage: `url(${imageUrl})` }}
         ></div>
+
         <div className="product-van__info">
           <h3 className="van-name">{name}</h3>
+
           <span className="van-prise">
             ${price}
             <span className="van-price-small">/day</span>
           </span>
         </div>
+
         <button className={`product-van__btn ${type}`}>{type}</button>
       </div>
     </Link>

@@ -1,5 +1,6 @@
 import { ReactElement } from 'react'
 import { Link } from 'react-router-dom'
+import './about.css'
 
 const About = (): ReactElement => {
   console.log('about')

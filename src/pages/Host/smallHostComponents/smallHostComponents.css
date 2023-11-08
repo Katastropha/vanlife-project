@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ================================================================= */
+/* dashboard ++ */
+
+.btn-details {
+  background: none;
+  border: none;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-decoration: underline;
+  color: #161616;
+}
+
+/* ================================================================= */
+/* LastDays */
+
+.gray-text {
+  color: #4d4d4d;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.gray-text-underline {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/* ================================================================= */
+/* Star, EmptyStar */
+
+.star-space {
+  margin: 0 4px 0 12px;
+}
+.star {
+  margin: 2px;
+}
+
+/* ================================================================= */
+/* income++ */
+/* HostOrderSummarySmall */
+
+.host-component__transactions {
+  width: 100%;
+  margin: 10px 0 60px 0;
+}
+
+.host-component__transactions-order {
+  background: white;
+  height: 102px;
+  margin: 0 0 25px;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 5px;
+}
+
+.price {
+  color: #161616;
+  font-size: 36px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.date {
+  color: #4d4d4d;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+/* ================================================================= */
+/* vans++ */
+/* HostOrderDetailSmall */
+
+.host-component-van__order-img {
+  width: 66px;
+  height: 66px;
+  border-radius: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.host-component-van__order-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.order-name {
+  margin: 0;
+  color: #161616;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.order-price {
+  margin: 0;
+  color: #4d4d4d;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+/* ================================================================= */
+/* reviews++ */
+/* Review */
+
+.review {
+  border-bottom: 1px solid #c7c7c7;
+  margin: 0 0 40px 0;
+  padding: 0 0 30px 0;
+}
+
+.review__user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.date-comment {
+  color: #8c8c8c;
+}
+
+.user-name,
+.date-comment {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.review__text {
+  margin: 0;
+}

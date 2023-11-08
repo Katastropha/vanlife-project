@@ -1,8 +1,10 @@
 import { ReactElement } from 'react'
-import { Star } from './smallHostComponents/Star'
-import { LastDays } from './smallHostComponents/LastDays'
-import { Host } from '../../data/dataHost'
-import { getTransactionsSmall } from './smallHostComponents/getTransactionsSmall'
+import { Star } from '../smallHostComponents/Star'
+import { LastDays } from '../smallHostComponents/LastDays'
+import { Host } from '../../../data/dataHost'
+import { getTransactionsSmall } from '../smallHostComponents/getTransactionsSmall'
+import { Link } from 'react-router-dom'
+import { DetailsBtn } from '../smallHostComponents/DetailsBtn'
 
 interface Props {
   host: Host
@@ -23,14 +25,8 @@ export const Dashboard = ({ host }: Props): ReactElement => {
 
           <p className="host-component__welcome-price">${host.income}</p>
         </div>
-        <button
-          onClick={() => {
-            console.log('Income last 30 days')
-          }}
-          className="btn-details"
-        >
-          Details
-        </button>
+
+        <DetailsBtn to={'/host/income'} />
       </div>
 
       <div className="host-component__review-score">
@@ -45,18 +41,12 @@ export const Dashboard = ({ host }: Props): ReactElement => {
           </h3>
         </div>
 
-        <button
-          onClick={() => {
-            console.log('Reviews')
-          }}
-          className="btn-details"
-        >
-          Details
-        </button>
+        <DetailsBtn to={'/host/reviews'} />
       </div>
 
       <div className="host-component__listed-vans">
         <h3 className="host-component__listed-vans-header">Your listed vans</h3>
+
         <div className="host-component__listed-vans_vans">{transactions}</div>
       </div>
     </div>
