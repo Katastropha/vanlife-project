@@ -1,19 +1,18 @@
 import { ReactElement, useState, useEffect } from 'react'
 
-import { initialVans } from '../../data/dataVans'
-import { VanFilterButtonComponent } from './components/VanFilterButtonComponent'
-import { getFilteredVans } from './getFilteredVans'
-import { getVansForRent } from './getVansForRent'
-import { ClearButton } from './ClearButton'
+import { initialVans } from '../../../../data/dataVans'
+import { VanFilterButtonComponent } from '../../components/VanFilterButtonComponent'
+import { getFilteredVans } from '../../getFilteredVans'
+import { VansForRentContainer } from '../VansForRentContainer/VansForRentContainer'
+import { ClearButtonComponent } from '../../components/VanClearButtonComponent/ClearButtonComponent'
 
-import './vans-css/vans.css'
-import './vans-css/vanCard.css'
+import styles from './VansContainer.module.css'
 
-const Vans = (): ReactElement => {
+export const VansContainer = (): ReactElement => {
   const [vansForRent, setVansForRent] = useState(initialVans)
   const [isFiltered, setIsFiltered] = useState(false)
 
-  const vans = getVansForRent(vansForRent)
+  const vans = VansForRentContainer(vansForRent)
 
   const handleFilteredList = (type: string) => {
     setIsFiltered(true)
@@ -27,8 +26,8 @@ const Vans = (): ReactElement => {
   }, [isFiltered])
 
   return (
-    <div className="content vans-component">
-      <div className="vans-component__filter">
+    <div className={styles['content vans-component']}>
+      <div className={styles['vans-component__filter']}>
         <VanFilterButtonComponent
           handleListOfVans={() => {
             handleFilteredList('simple')
@@ -50,15 +49,14 @@ const Vans = (): ReactElement => {
         />
 
         {isFiltered && (
-          <ClearButton
+          <ClearButtonComponent
             handleFilter={() => setIsFiltered(false)}
             text={'Clear filters'}
           />
         )}
       </div>
 
-      <div className="vans-component__items">{vans}</div>
+      <div className={styles['vans-component__items']}>{vans}</div>
     </div>
   )
 }
-export default Vans

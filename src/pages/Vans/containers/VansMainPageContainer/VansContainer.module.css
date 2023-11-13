@@ -18,17 +18,6 @@
   margin: 10px 0 0 20px;
 }
 
-.van-filter-btn-clear {
-  border: none;
-  background: none;
-  font-family: Inter;
-  color: #4d4d4d;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  text-decoration-line: underline;
-}
-
 .vans-component-items {
   background-color: red;
 }

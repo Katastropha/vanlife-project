@@ -1,4 +1,5 @@
 import { ReactElement } from 'react'
+
 import styles from './ClearButtonComponent.module.css'
 
 type Props = {

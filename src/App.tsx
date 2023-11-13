@@ -2,10 +2,10 @@ import './App.css'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import { Home, About, Vans, Host } from './pages/index'
+import { Home, About, VansContainer, Host } from './pages/index'
 
 import { MainNavbar } from './smallComponents/MainNavbar'
-import { VanDetailed } from './pages/Vans/VanDetailed'
+import { VanDetailedComponent } from './pages/Vans/components/VanDetailedComponent/'
 
 import { Dashboard } from './pages/Host/HostComponents/Dashboard'
 import { Income } from './pages/Host/HostComponents/Income'
@@ -29,8 +29,8 @@ function App() {
             {/* <Route path="/vans" element={<Vans />} /> */}
           </Route>
 
-          <Route path="/vans" element={<Vans />} />
-          <Route path="/vans/:id" element={<VanDetailed />} />
+          <Route path="/vans" element={<VansContainer />} />
+          {/* <Route path="/vans/:id" element={<VanDetailedComponent />} /> */}
 
           <Route path="/host" element={<Host />}>
             <Route path="/host" element={<Dashboard host={dataHost[0]} />} />
