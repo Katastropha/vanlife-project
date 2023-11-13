@@ -1,9 +1,9 @@
 import { ReactElement } from 'react'
-import { NavigationSmall } from './NavigationSmall'
+import { NavigationSmall } from './HostComponents/NavigationSmall'
 import { Outlet } from 'react-router-dom'
 
-import './HostComponents/hostComponents.css'
-import './smallHostComponents/smallHostComponents.css'
+import './HostComponents/host-components-css/hostComponents.css'
+import './smallHostComponents/small-host-components-css/smallHostComponents.css'
 
 export const Host = (): ReactElement => {
   return (

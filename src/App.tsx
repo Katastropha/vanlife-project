@@ -1,11 +1,12 @@
 import './App.css'
-import './pages/Host/host.css'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { Home, About, Vans, Host } from './pages/index'
+
 import { MainNavbar } from './smallComponents/MainNavbar'
 import { VanDetailed } from './pages/Vans/VanDetailed'
+
 import { Dashboard } from './pages/Host/HostComponents/Dashboard'
 import { Income } from './pages/Host/HostComponents/Income'
 import { HostVans } from './pages/Host/HostComponents/HostVans'

@@ -6,6 +6,9 @@ import { getFilteredVans } from './getFilteredVans'
 import { getVansForRent } from './getVansForRent'
 import { ClearButton } from './ClearButton'
 
+import './vans-css/vans.css'
+import './vans-css/vanCard.css'
+
 const Vans = (): ReactElement => {
   const [vansForRent, setVansForRent] = useState(initialVans)
   const [isFiltered, setIsFiltered] = useState(false)

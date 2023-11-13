@@ -9,8 +9,6 @@ export const VanFilterButton = ({ handleListOfVans, type }: Props) => {
       className="van-filter-btn"
       onClick={() => {
         handleListOfVans()
-        // setIsFiltered(true)
-        // getFilteredVans('simple')
       }}
     >
       {type}

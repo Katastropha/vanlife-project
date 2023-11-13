@@ -1,6 +1,6 @@
 import { ReactElement } from 'react'
 import { NavLink } from 'react-router-dom'
-import './components.css'
+import './mainNavigation.css'
 
 export const MainNavbar = (): ReactElement => {
   return (
