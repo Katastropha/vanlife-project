@@ -1,7 +1,7 @@
 import { ReactElement, useState, useEffect } from 'react'
 
-import { IVans, initialVans } from '../../data/dataVans'
-import { VanFilterButton } from './VanFilterButton'
+import { initialVans } from '../../data/dataVans'
+import { VanFilterButtonComponent } from './components/VanFilterButtonComponent'
 import { getFilteredVans } from './getFilteredVans'
 import { getVansForRent } from './getVansForRent'
 import { ClearButton } from './ClearButton'
@@ -29,20 +29,20 @@ const Vans = (): ReactElement => {
   return (
     <div className="content vans-component">
       <div className="vans-component__filter">
-        <VanFilterButton
+        <VanFilterButtonComponent
           handleListOfVans={() => {
             handleFilteredList('simple')
           }}
           type={'simple'}
         />
-        <VanFilterButton
+        <VanFilterButtonComponent
           handleListOfVans={() => {
             handleFilteredList('rugged')
           }}
           type={'rugged'}
         />
 
-        <VanFilterButton
+        <VanFilterButtonComponent
           handleListOfVans={() => {
             handleFilteredList('luxury')
           }}
