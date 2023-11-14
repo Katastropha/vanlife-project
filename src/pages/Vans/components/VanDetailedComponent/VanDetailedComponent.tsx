@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 import { IVans, initialVans } from '../../../../data/dataVans'
 import { useParams } from 'react-router-dom'
-import { BackWithArrow } from '../../../../smallComponents/BackWithArrow'
+import { BackWithArrow } from './BackWithArrow'
 
 import styles from './VanDetailedComponent.module.css'
 
@@ -16,6 +16,7 @@ export const VanDetailedComponent = (): ReactElement | null => {
 
   return (
     <div className={styles['van-detail']} key={van.id}>
+      {/* TODO: add new function back to filtered list of vans  */}
       <BackWithArrow text={'Back to all vans'} />
 
       <div
@@ -35,7 +36,8 @@ export const VanDetailedComponent = (): ReactElement | null => {
       <p className={styles['van-detail__description']}>{van.description}</p>
 
       <button
-        className="btn"
+        className={styles['btn']}
+        // TODO: add a new function rentVan
         onClick={() => {
           console.log('rent this van')
         }}
