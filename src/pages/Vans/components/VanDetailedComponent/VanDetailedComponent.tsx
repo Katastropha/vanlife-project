@@ -8,9 +8,7 @@ import styles from './VanDetailedComponent.module.css'
 export const VanDetailedComponent = (): ReactElement | null => {
   const { id } = useParams()
   const van: IVans | undefined =
-    typeof id === 'string'
-      ? initialVans.find((el) => el.id === parseInt(id))
-      : undefined
+    typeof id === 'string' ? initialVans.find((el) => el.id === id) : undefined
 
   if (!van) return null
 

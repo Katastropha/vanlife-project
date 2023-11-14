@@ -1,6 +1,6 @@
 export interface IVans {
   // map(arg0: (el: any) => import('react/jsx-runtime').JSX.Element): unknown
-  id: number
+  id: string
   name: string
   price: number
   description: string
@@ -17,7 +17,7 @@ export interface IVans {
 
 export const initialVans: IVans[] = [
   {
-    id: 1,
+    id: '1',
     name: 'Modest Explorer',
     price: 60,
     description:
@@ -36,7 +36,7 @@ export const initialVans: IVans[] = [
     ],
   },
   {
-    id: 2,
+    id: '2',
     name: 'Beach Bum',
     price: 80,
     description:
@@ -55,7 +55,7 @@ export const initialVans: IVans[] = [
     ],
   },
   {
-    id: 3,
+    id: '3',
     name: 'Reliable Red',
     price: 100,
     description:
@@ -74,7 +74,7 @@ export const initialVans: IVans[] = [
     ],
   },
   {
-    id: 4,
+    id: '4',
     name: 'Dreamfinder',
     price: 65,
     description:
@@ -85,7 +85,7 @@ export const initialVans: IVans[] = [
     comments: [],
   },
   {
-    id: 5,
+    id: '5',
     name: 'The Cruiser',
     price: 120,
     description:
@@ -111,7 +111,7 @@ export const initialVans: IVans[] = [
     ],
   },
   {
-    id: 6,
+    id: '6',
     name: 'Green Wonder',
     price: 70,
     description:
