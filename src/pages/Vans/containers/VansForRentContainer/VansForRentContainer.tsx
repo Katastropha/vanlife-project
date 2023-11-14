@@ -1,8 +1,6 @@
 import { IVans } from '../../../../data/dataVans'
 import { ProductComponent } from '../../components/ProductComponent/ProductComponent'
 
-// import styles from './VansForRentContainer.module.css'
-
 export const VansForRentContainer = (arr: IVans[]) =>
   arr.map((el) => (
     <ProductComponent

@@ -26,7 +26,7 @@ export const VansContainer = (): ReactElement => {
   }, [isFiltered])
 
   return (
-    <div className={styles['content vans-component']}>
+    <div className={`${styles['content']} ${styles['vans-component']}`}>
       <div className={styles['vans-component__filter']}>
         <VanFilterButtonComponent
           handleListOfVans={() => {

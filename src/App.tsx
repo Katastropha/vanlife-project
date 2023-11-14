@@ -26,11 +26,11 @@ function App() {
           <Route path="/" element={<Home />} />
 
           <Route path="/about" element={<About />}>
-            {/* <Route path="/vans" element={<Vans />} /> */}
+            {/* <Route path="/vans" element={<VansContainer />} /> */}
           </Route>
 
           <Route path="/vans" element={<VansContainer />} />
-          {/* <Route path="/vans/:id" element={<VanDetailedComponent />} /> */}
+          <Route path="/vans/:id" element={<VanDetailedComponent />} />
 
           <Route path="/host" element={<Host />}>
             <Route path="/host" element={<Dashboard host={dataHost[0]} />} />

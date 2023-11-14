@@ -23,7 +23,7 @@ export const VanDetailedComponent = (): ReactElement | null => {
         style={{ backgroundImage: `url(${van.imageUrl})` }}
       ></div>
 
-      <button className={`styles[van-detail__btn] ${van.type}`}>
+      <button className={`${styles['van-detail__btn']} ${styles[van.type]}`}>
         {van.type}
       </button>
 

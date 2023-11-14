@@ -11,8 +11,6 @@ type Props = {
   imageUrl: string
 }
 
-// TODO: fix css .content: flex-grow for vansContainer
-
 export const ProductComponent = ({
   id,
   name,

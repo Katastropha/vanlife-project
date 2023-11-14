@@ -1,5 +1,5 @@
 export interface IVans {
-  map(arg0: (el: any) => import('react/jsx-runtime').JSX.Element): unknown
+  // map(arg0: (el: any) => import('react/jsx-runtime').JSX.Element): unknown
   id: number
   name: string
   price: number
