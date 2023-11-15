@@ -2,6 +2,9 @@ import { ReactElement } from 'react'
 import { Link } from 'react-router-dom'
 import './home.css'
 
+// TODO: add css modules
+// TODO: rename Home to HomeComponent
+
 const Home = (): ReactElement => {
   console.log('home')
   return (

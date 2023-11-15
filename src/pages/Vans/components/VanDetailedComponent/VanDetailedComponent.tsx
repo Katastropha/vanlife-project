@@ -12,6 +12,8 @@ export const VanDetailedComponent = (): ReactElement | null => {
 
   if (!van) return null
 
+  // TODO: {id, imageUrl, type, name, price, description}
+
   return (
     <div className={styles['van-detail']} key={van.id}>
       {/* TODO: add new function back to filtered list of vans  */}

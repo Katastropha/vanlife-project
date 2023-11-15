@@ -1,4 +1,5 @@
 import { ReactElement } from 'react'
+import { Link } from 'react-router-dom'
 
 type Props = {
   text: string
@@ -6,13 +7,7 @@ type Props = {
 
 export const BackWithArrow = ({ text }: Props): ReactElement => {
   return (
-    <p
-      className="back"
-      onClick={() => {
-        // TODO: add function, that return the user back to previous vans
-        console.log('BACK TO VANS')
-      }}
-    >
+    <Link className="back" to={'/vans'}>
       <svg
         className="arrow"
         width="14"
@@ -28,6 +23,6 @@ export const BackWithArrow = ({ text }: Props): ReactElement => {
         />
       </svg>
       {text}
-    </p>
+    </Link>
   )
 }

@@ -1,12 +1,22 @@
 import { ReactElement, useState, useEffect } from 'react'
 
 import { initialVans } from '../../../../data/dataVans'
-import { VanFilterButtonComponent } from '../../components/VanFilterButtonComponent'
+
 import { getFilteredVans } from '../../getFilteredVans'
+
+import { VanFilterButtonComponent } from '../../components/VanFilterButtonComponent'
 import { VansForRentContainer } from '../VansForRentContainer/VansForRentContainer'
 import { ClearButtonComponent } from '../../components/VanClearButtonComponent/ClearButtonComponent'
 
 import styles from './VansContainer.module.css'
+
+// TODO: Create [searchParams, setSearchParams] = useSearchParams()
+// TODO: Create handleFilterChange = (key, value) => setSearchParams(prevParams => if(value === null) prevParams.delete(key)) ELSE prevParams.set(key, value); return prevParams
+
+// TODO: Create: displayedVans: typeFilter ? vans.filter(({type}) => type === typeFilter) : vans
+// TODO: Create: displayedVans.map((el) => <>...<Link to={el.id} state={{search: `?${searchParams.toString()}`, type: typeFilter}} /> ...</>)
+
+// TODO: Change <Link /> to <button /> with: onClick={() => handleFilterChange("type", "simple")}; className={`van-type simple ${typeFilter === "simple" ? "selected" : ''}`}
 
 export const VansContainer = (): ReactElement => {
   const [vansForRent, setVansForRent] = useState(initialVans)

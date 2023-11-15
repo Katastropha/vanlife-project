@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import styles from './ProductComponent.module.css'
 
 type Props = {
-  id: number
+  id: string
   name: string
   price: number
   type: string
