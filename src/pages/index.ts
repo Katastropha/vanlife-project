@@ -1,6 +1,6 @@
-import Home from './Home/Home'
+import { HomeComponent } from './Home/HomeComponent'
 import { AboutComponent } from './AboutComponent/AboutComponent'
 import { Host } from './Host/Host'
 import { VansContainer } from './Vans/containers/VansMainPageContainer/VansContainer'
 
-export { Home, AboutComponent, Host, VansContainer }
+export { HomeComponent, AboutComponent, Host, VansContainer }

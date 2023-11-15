@@ -2,7 +2,7 @@ import './App.css'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import { Home, VansContainer, Host } from './pages/index'
+import { VansContainer, Host, HomeComponent } from './pages/index'
 
 import { MainNavbar } from './smallComponents/MainNavbar'
 import { VanDetailedComponent } from './pages/Vans/components/VanDetailedComponent/'
@@ -31,7 +31,7 @@ function App() {
         </header>
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomeComponent />} />
 
           <Route path="/about" element={<AboutComponent />}></Route>
 
