@@ -7,6 +7,8 @@ interface Props {
   host: Host
 }
 
+console.log('REVIEWS')
+
 export const Reviews = ({ host }: Props): ReactElement => {
   const reviews = host.reviews
   return (

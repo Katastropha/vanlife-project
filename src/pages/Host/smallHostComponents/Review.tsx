@@ -2,6 +2,8 @@ import { ReactElement } from 'react'
 import { Star } from './Star'
 import { EmptyStar } from './EmptyStar'
 
+// TODO: Change the getStarsComponent
+
 const getStars = (score: string): ReactElement => {
   if (score === '5') {
     return (

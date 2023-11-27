@@ -9,13 +9,21 @@ interface Props {
   host: Host
 }
 
+let keys = 1
+
+console.log('INCOME')
+
 export const Income = ({ host }: Props): ReactElement => {
   const transactions = getListOfOrders(host.ordersIDs).map(
     ({ orderPrice, orderDate }) => {
       return (
-        <HostOrderSummarySmall orderPrice={orderPrice} orderDate={orderDate} />
+        <HostOrderSummarySmall
+          key={keys++}
+          orderPrice={orderPrice}
+          orderDate={orderDate}
+        />
       )
-    }
+    },
   )
 
   return (

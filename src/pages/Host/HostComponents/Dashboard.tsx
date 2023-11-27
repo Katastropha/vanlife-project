@@ -3,7 +3,6 @@ import { Star } from '../smallHostComponents/Star'
 import { LastDays } from '../smallHostComponents/LastDays'
 import { Host } from '../../../data/dataHost'
 import { getTransactionsSmall } from '../smallHostComponents/getTransactionsSmall'
-import { Link } from 'react-router-dom'
 import { DetailsBtn } from '../smallHostComponents/DetailsBtn'
 
 interface Props {

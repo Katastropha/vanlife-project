@@ -4,6 +4,7 @@ import { getListOfOrders } from './getListOfOrders'
 
 // TODO: correct types in VansData; Add types
 export const getTransactionsSmall = (ordersIDs: string[]) => {
+  console.log(ordersIDs)
   const transactions = getListOfOrders(ordersIDs)
     .map(({ vanId }) => vanId)
     .map((id) => initialVans.find((obj) => obj.id === id))

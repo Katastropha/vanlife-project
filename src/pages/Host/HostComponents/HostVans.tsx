@@ -16,3 +16,13 @@ export const HostVans = ({ host }: Props): ReactElement => {
     </div>
   )
 }
+
+// export const HostVans = ({ host }: Props): ReactElement => {
+//   const transactions = getTransactionsSmall(host.ordersIDs)
+//   return (
+//     <>
+//       <h1>I am Vans</h1>
+//       {transactions}
+//     </>
+//   )
+// }
