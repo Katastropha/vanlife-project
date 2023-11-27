@@ -7,7 +7,7 @@ import { VansContainer, Host, HomeComponent } from './pages/index'
 import { MainNavbar } from './smallComponents/MainNavbar'
 import { VanDetailedComponent } from './pages/Vans/components/VanDetailedComponent/'
 
-import { Dashboard } from './pages/Host/HostComponents/Dashboard'
+import { Dashboard } from './pages/Host/components/DashboardComponent/Dashboard'
 import { Income } from './pages/Host/HostComponents/Income'
 import { HostVans } from './pages/Host/HostComponents/HostVans'
 import { Reviews } from './pages/Host/HostComponents/Reviews'
