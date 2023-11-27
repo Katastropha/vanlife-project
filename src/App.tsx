@@ -9,7 +9,7 @@ import { VanDetailedComponent } from './pages/Vans/components/VanDetailedCompone
 
 import { Dashboard } from './pages/Host/components/DashboardComponent/Dashboard'
 import { Income } from './pages/Host/HostComponents/Income'
-import { HostVans } from './pages/Host/HostComponents/HostVans'
+import { HostVans } from './pages/Host/components/HostVansComponent/HostVans'
 import { Reviews } from './pages/Host/HostComponents/Reviews'
 
 import { dataHost } from './data/dataHost'
