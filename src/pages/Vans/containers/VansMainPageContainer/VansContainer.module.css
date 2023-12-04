@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+/* VANS */
+/* ================================================================= */
+
+.vans-component {
+  height: 100%;
+  margin: 0 0 50px 0;
+}
+
+.vans-component__filter {
+  margin: 10px 0 0 20px;
+}
+
+.vans-component-items {
+  background-color: red;
+}

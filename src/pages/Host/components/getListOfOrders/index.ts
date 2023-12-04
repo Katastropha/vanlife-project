@@ -1,0 +1,1 @@
+export { getListOfOrders } from './getListOfOrders'

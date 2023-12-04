@@ -1,0 +1,1 @@
+export { ClearButtonComponent } from './ClearButtonComponent'
