@@ -1,9 +1,9 @@
 import { ReactElement } from 'react'
-import { Star } from '../../smallHostComponents/Star'
-import { LastDays } from '../../smallHostComponents/LastDays'
+import { Star } from '../../components/StarComponent/Star'
+import { LastDays } from '../../components/LastDaysComponent/LastDays'
 import { Host } from '../../../../data/dataHost'
 import { TransactionsSmallComponent } from '../../components/TransactionsSmallComponent'
-import { DetailsBtn } from '../../smallHostComponents/DetailsBtn'
+import { DetailsBtn } from '../../components/DetailsBtnComponent/DetailsBtn'
 
 interface Props {
   host: Host
@@ -34,14 +34,14 @@ export const Dashboard = ({ host }: Props): ReactElement => {
 
       <div className={styles['host-component__review-score']}>
         <div>
-          <h3 className={styles['block-header']}>
-            Review score
-            <span className={styles['star-space']}>
-              <Star />
-            </span>
+          <h3 className={styles['block-header']}>Review score</h3>
+
+          <span className={styles['header-space-score']}>
+            <Star />
             {host.reviewScore}
-            <span className={styles['review-score-block-grey']}>/5</span>
-          </h3>
+          </span>
+
+          <span className={styles['review-score-block-grey']}>/5</span>
         </div>
 
         <DetailsBtn to={'/host/reviews'} />

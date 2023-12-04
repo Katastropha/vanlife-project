@@ -2,7 +2,7 @@ export interface Host {
   name: string
   id: string
   income: number
-  reviewScore: number
+  reviewScore: string
   diagram: string
   ordersIDs: string[]
   reviews:
@@ -16,7 +16,7 @@ export const dataHost: Host[] = [
     name: 'host123',
     id: '12',
     income: 2260,
-    reviewScore: 5,
+    reviewScore: '4.5',
     diagram: '/src/images/graf.png',
     ordersIDs: ['11223344', '11223347', '11223348'],
     reviews: [
@@ -41,7 +41,7 @@ export const dataHost: Host[] = [
     name: 'host456',
     id: '13',
     income: 1050,
-    reviewScore: 0,
+    reviewScore: '0',
     diagram: '/src/images/graf.png',
     ordersIDs: ['11223345', '11223349', '11223350', '11223351'],
     reviews: [],
@@ -51,7 +51,7 @@ export const dataHost: Host[] = [
     name: 'host789',
     id: '14',
     income: 6000,
-    reviewScore: 0,
+    reviewScore: '0',
     diagram: '/src/images/graf.png',
     ordersIDs: ['11223346'],
     reviews: [],
@@ -61,7 +61,7 @@ export const dataHost: Host[] = [
     name: 'host101112',
     id: '15',
     income: 0,
-    reviewScore: 0,
+    reviewScore: '0',
     diagram: '',
     ordersIDs: [],
     reviews: [],

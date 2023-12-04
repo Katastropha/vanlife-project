@@ -1,6 +1,6 @@
 import { initialVans } from '../../../../data/dataVans'
 import { HostOrderDetailSmall } from '../HostOrderDetailSmallComponent'
-import { getListOfOrders } from '../../smallHostComponents/getListOfOrders'
+import { getListOfOrders } from '../getListOfOrders/getListOfOrders'
 
 // TODO: correct types in VansData; Add types
 export const TransactionsSmallComponent = (ordersIDs: string[]) => {

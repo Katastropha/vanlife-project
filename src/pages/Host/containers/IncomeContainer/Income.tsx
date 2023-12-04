@@ -1,9 +1,9 @@
 import { ReactElement } from 'react'
 import { Host } from '../../../../data/dataHost'
-import { LastDays } from '../../smallHostComponents/LastDays'
+import { LastDays } from '../../components/LastDaysComponent/LastDays'
 import { HostOrderSummarySmall } from '../../components/HostOrderSummarySmallComponent/HostOrderSummarySmall'
 
-import { getListOfOrders } from '../../smallHostComponents/getListOfOrders'
+import { getListOfOrders } from '../../components/getListOfOrders/getListOfOrders'
 
 import styles from './IncomeContainer.module.css'
 

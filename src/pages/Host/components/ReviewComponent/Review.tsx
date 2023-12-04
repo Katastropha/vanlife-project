@@ -1,6 +1,6 @@
 import { ReactElement } from 'react'
-import { Star } from '../../smallHostComponents/Star'
-import { EmptyStar } from '../../smallHostComponents/EmptyStar'
+import { Star } from '../StarComponent/Star'
+import { EmptyStar } from '../EmptyStarComponent/EmptyStar'
 
 import styles from './ReviewsComponent.module.css'
 

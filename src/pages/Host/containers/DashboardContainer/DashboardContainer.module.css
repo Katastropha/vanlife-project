@@ -44,14 +44,19 @@
   border-radius: 5px;
   background: #ffddb2;
   min-height: 113px;
+}
+
+.block-header {
+  display: inline-block;
+  margin: 0 12px 0 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 22px;
 }
 
-.block-header {
-  margin: 0 12px 0 0;
-  font-size: 24px;
+.header-space-score {
+  margin: 0 0 0 5px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 22px;
 }

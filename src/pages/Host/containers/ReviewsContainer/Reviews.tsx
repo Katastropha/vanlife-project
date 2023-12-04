@@ -1,6 +1,6 @@
 import { ReactElement } from 'react'
 import { Host } from '../../../../data/dataHost'
-import { LastDays } from '../../smallHostComponents/LastDays'
+import { LastDays } from '../../components/LastDaysComponent/LastDays'
 import { Review } from '../../components/ReviewComponent'
 
 import styles from './ReviewsContainer.module.css'
