@@ -1,9 +1,9 @@
-import { initialVans } from '../../../data/dataVans'
-import { HostOrderDetailSmall } from './HostOrderDetailSmall'
-import { getListOfOrders } from './getListOfOrders'
+import { initialVans } from '../../../../data/dataVans'
+import { HostOrderDetailSmall } from '../HostOrderDetailSmallComponent'
+import { getListOfOrders } from '../../smallHostComponents/getListOfOrders'
 
 // TODO: correct types in VansData; Add types
-export const getTransactionsSmall = (ordersIDs: string[]) => {
+export const TransactionsSmallComponent = (ordersIDs: string[]) => {
   console.log(ordersIDs)
   const transactions = getListOfOrders(ordersIDs)
     .map(({ vanId }) => vanId)

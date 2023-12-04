@@ -2,17 +2,17 @@ import { ReactElement } from 'react'
 import { Star } from '../../smallHostComponents/Star'
 import { LastDays } from '../../smallHostComponents/LastDays'
 import { Host } from '../../../../data/dataHost'
-import { getTransactionsSmall } from '../../smallHostComponents/getTransactionsSmall'
+import { TransactionsSmallComponent } from '../../components/TransactionsSmallComponent'
 import { DetailsBtn } from '../../smallHostComponents/DetailsBtn'
 
 interface Props {
   host: Host
 }
 
-import styles from './DashboardComponent.module.css'
-
+import styles from './DashboardContainer.module.css'
+console.log('Dashboard is here!')
 export const Dashboard = ({ host }: Props): ReactElement => {
-  const transactions = getTransactionsSmall(host.ordersIDs)
+  const transactions = TransactionsSmallComponent(host.ordersIDs)
 
   return (
     <div className={styles['host-component']}>

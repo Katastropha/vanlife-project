@@ -1,8 +1,8 @@
 import { ReactElement } from 'react'
 import { Host } from '../../../../data/dataHost'
-import { getTransactionsSmall } from '../../smallHostComponents/getTransactionsSmall'
+import { TransactionsSmallComponent } from '../../components/TransactionsSmallComponent/TransactionsSmallComponent'
 
-import styles from './HostVansComponent.module.css'
+import styles from './HostVansContainer.module.css'
 
 interface Props {
   host: Host
@@ -11,10 +11,12 @@ interface Props {
 // TODO: Create a DatailsComponent for HostVans
 
 export const HostVans = ({ host }: Props): ReactElement => {
-  const transactions = getTransactionsSmall(host.ordersIDs)
+  const transactions = TransactionsSmallComponent(host.ordersIDs)
 
   return (
-    <div className={styles['host-component host-component-vans']}>
+    <div
+      className={`${styles['host-component']} ${styles['host-component-vans']}`}
+    >
       <h1>Your listed vans</h1>
       <div className={styles['host-component-vans-details']}>
         {transactions}

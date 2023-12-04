@@ -1,5 +1,7 @@
 import { ReactElement } from 'react'
 
+import styles from './HostOrderDetailSmallComponent.module.css'
+
 interface Props {
   vanImage: string
   vanName: string
@@ -12,17 +14,17 @@ export const HostOrderDetailSmall = ({
   vanPrice,
 }: Props): ReactElement => {
   return (
-    <div className="host-component-van">
+    <div className={styles['host-component-van']}>
       <div
-        className="host-component-van__order-img"
+        className={styles['host-component-van__order-img']}
         style={{ backgroundImage: `url(${vanImage})` }}
       >
         {' '}
       </div>
 
-      <div className="host-component-van__order-info">
-        <h3 className="order-name">{vanName}</h3>
-        <p className="order-price">${vanPrice}/day</p>
+      <div className={styles['host-component-van__order-info']}>
+        <h3 className={styles['order-name']}>{vanName}</h3>
+        <p className={styles['order-price']}>${vanPrice}/day</p>
       </div>
     </div>
   )

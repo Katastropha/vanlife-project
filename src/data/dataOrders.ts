@@ -1,4 +1,4 @@
-export interface PropsOrdersData {
+export interface IOrdersData {
   id: string
   userId: string
   vanId: string
@@ -8,7 +8,7 @@ export interface PropsOrdersData {
   orderDate: string
 }
 
-export const dataOrders: PropsOrdersData[] = [
+export const dataOrders: IOrdersData[] = [
   {
     id: '11223344',
     userId: '12',

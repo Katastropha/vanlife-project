@@ -3,8 +3,14 @@
   color: #161616;
   font-family: Inter;
   font-style: normal;
+  padding: 0 26px;
 }
-/* >>>> */
+
+.host-component__transactions {
+  width: 100%;
+  margin: 10px 0 60px 0;
+}
+
 .host-component__welcome {
   padding: 37px 26px;
   display: flex;
@@ -35,45 +41,27 @@
   line-height: 38px;
 }
 
-/* <<<< */
+.host-component-income {
+  padding: 0 27px 0 27px;
+}
 
-.host-component__review-score {
+.img {
+  width: 100%;
+  min-height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.host-component__small-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  padding: 45px 26px;
-  border-radius: 5px;
-  background: #ffddb2;
-  min-height: 113px;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 22px;
+  align-items: center;
+  margin: 50px 0 15px;
 }
 
 .block-header {
-  margin: 0 12px 0 0;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 22px;
+  margin: 0;
 }
 
-.review-score-block-grey {
-  color: #4d4d4d;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 22px;
-}
-
-.host-component__listed-vans {
-  padding: 38px 26px;
-}
-
-.host-component__listed-vans-header {
-  color: #161616;
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 22px;
-}
+/* TODO: fix  'Your transactions'*/

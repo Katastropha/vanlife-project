@@ -1,31 +1,32 @@
 import { ReactElement } from 'react'
-import { Host } from '../../../data/dataHost'
-import { LastDays } from '../smallHostComponents/LastDays'
-import { Review } from '../smallHostComponents/Review'
+import { Host } from '../../../../data/dataHost'
+import { LastDays } from '../../smallHostComponents/LastDays'
+import { Review } from '../../components/ReviewComponent'
 
+import styles from './ReviewsContainer.module.css'
 interface Props {
   host: Host
 }
 
-console.log('REVIEWS')
-
 export const Reviews = ({ host }: Props): ReactElement => {
   const reviews = host.reviews
   return (
-    <div className="host-component host-component-reviews">
-      <div className="host-reviews__header">
-        <h2 className="host-reviews__header-introduce">Your reviews</h2>
+    <div className={styles['host-component']}>
+      <div className={styles['host-reviews__header']}>
+        <h2 className={styles['host-reviews__header-introduce']}>
+          Your reviews
+        </h2>
         <LastDays />
       </div>
       <div
-        className="img"
+        className={styles['img']}
         style={{
           backgroundImage: `url(${host.graph})`,
           backgroundColor: 'white',
         }}
       ></div>
-      <div className="host-reviews__reviews">
-        <h3 className="host-reviews__reviews-header-small">
+      <div className={styles['host-reviews__reviews']}>
+        <h3 className={styles['host-reviews__reviews-header-small']}>
           Reviews({reviews.length})
         </h3>
         {reviews.map((obj) => {

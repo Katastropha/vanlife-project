@@ -7,19 +7,19 @@ import { VansContainer, Host, HomeComponent } from './pages/index'
 import { MainNavbar } from './smallComponents/MainNavbar'
 import { VanDetailedComponent } from './pages/Vans/components/VanDetailedComponent/'
 
-import { Dashboard } from './pages/Host/components/DashboardComponent/Dashboard'
-import { Income } from './pages/Host/HostComponents/Income'
-import { HostVans } from './pages/Host/components/HostVansComponent/HostVans'
-import { Reviews } from './pages/Host/HostComponents/Reviews'
+import { Dashboard } from './pages/Host/containers/DashboardContainer/Dashboard'
+import { Income } from './pages/Host/containers/IncomeContainer/Income'
+import { HostVans } from './pages/Host/containers/HostVansContainer/HostVans'
 
 import { dataHost } from './data/dataHost'
 
 import { AboutComponent } from './pages/AboutComponent/AboutComponent'
+import { Reviews } from './pages/Host/containers/ReviewsContainer/Reviews'
 
-// TODO: Create NotFoundComponent and add to App
-// TODO: Create ErrorComponent and add the component to all pages
-// TODO: Create LoginContainer and wrap it around the HostContainer, with: loader={}, action={}
-// TODO: Add await function that imitate loading: loader={async ({request}) => await requireAuth(request)}
+// TODO: Create NotFoundComponent and add to App??
+// TODO: Create ErrorComponent and add the component to all pages??
+// TODO: Create LoginContainer and wrap it around the HostContainer, with: loader={}, action={}??
+// TODO: Add await function that imitate loading: loader={async ({request}) => await requireAuth(request)}??
 // TODO: Add 'loader' function to another pages ?
 
 function App() {

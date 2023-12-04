@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import { NavigationSmall } from './HostComponents/NavigationSmall'
+import { NavigationSmall } from './components/NavigationsSmallComponent/NavigationSmall'
 import { Outlet } from 'react-router-dom'
 
 import './HostComponents/host-components-css/hostComponents.css'

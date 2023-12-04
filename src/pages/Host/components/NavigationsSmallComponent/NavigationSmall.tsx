@@ -1,6 +1,8 @@
 import { ReactElement } from 'react'
 import { NavLink } from 'react-router-dom'
 
+import styles from './NavigationSmallComponent.module.css'
+
 export const NavigationSmall = (): ReactElement => {
   return (
     <div className="navigation-small">
