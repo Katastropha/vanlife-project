@@ -1,1 +1,0 @@
-export { getListOfOrders } from './getListOfOrders'

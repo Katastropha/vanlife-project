@@ -1,1 +1,0 @@
-export { DetailsBtn } from './DetailsBtn'

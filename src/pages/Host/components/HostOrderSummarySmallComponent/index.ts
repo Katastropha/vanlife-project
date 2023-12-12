@@ -1,1 +1,0 @@
-export { HostOrderSummarySmall } from './HostOrderSummarySmall'

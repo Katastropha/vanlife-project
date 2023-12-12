@@ -1,1 +1,0 @@
-export { TransactionsSmallComponent } from './TransactionsSmallComponent'

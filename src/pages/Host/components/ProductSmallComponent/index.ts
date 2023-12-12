@@ -1,1 +1,0 @@
-export { ProductSmall } from './ProductSmall'

@@ -1,1 +1,0 @@
-export { EmptyStar } from './EmptyStar'

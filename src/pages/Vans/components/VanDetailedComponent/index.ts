@@ -1,1 +1,0 @@
-export { VanDetailedComponent } from './VanDetailedComponent'

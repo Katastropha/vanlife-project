@@ -1,9 +1,0 @@
-{
-  "env": {},
-  "rules": { "implicit-arrow-linebreak": ["error", "beside"] },
-  "parserOptions": {
-    "ecmaFeatures": {},
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  }
-}

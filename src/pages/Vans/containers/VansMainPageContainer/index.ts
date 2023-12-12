@@ -1,1 +1,0 @@
-export { VansContainer } from './VansContainer'
