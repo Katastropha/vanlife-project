@@ -1,0 +1,1 @@
+export { HostOrderDetailSmall } from './HostOrderDetailSmall'
